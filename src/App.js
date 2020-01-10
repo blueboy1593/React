@@ -10,6 +10,10 @@ class App extends Component {
   // render 함수 다음에 실행되는 것 무조건!!
   componentDidMount(){
     fetch('https://yts.lt/api/v2/list_movies.json?sort_by=rating')
+    .then(potato => potato.json())
+    .then(gamja => console.log(gamja))
+    .catch(err => console.log(err))
+    console.log('Hello')
   }
 
   _renderMovies = () => {
