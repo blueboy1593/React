@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Movie from './Movie';
 
@@ -13,14 +13,32 @@ const movies = [
   },
 ]
 
-function App() {
-  return (
-    <div className="App">
-      {movies.map((movie, index) => {
-        return <Movie title={movie.title} poster={movie.poster} key={index} />
-      })}
-    </div>
-  );
+class App extends Component {
+  // state는 초기 상태만 정의해주면 된다.
+  state = {
+    greeting: 'Kang Hyun'
+  }
+  
+  // render 함수 다음에 실행되는 것 무조건!!
+  componentDidMount(){
+    setTimeout(() => {
+      // setState를 통해서 바꾸는게 이상적이다.
+      this.setState({
+        greeting: 'HI!'
+      })
+    }, 3000)
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>{this.state.greeting}</h1>
+        {movies.map((movie, index) => {
+          return <Movie title={movie.title} poster={movie.poster} key={index} />
+        })}
+      </div>
+    );
+  }
 }
 
 export default App;
