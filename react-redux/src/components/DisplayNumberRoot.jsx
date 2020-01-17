@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-import DisplayNumber from "../components/DisplayNumber";
+import DisplayNumber from "../containers/DisplayNumber";
 export default class DisplayNumberRoot extends Component{
-    state = {number:0}
     render(){
       return (
         <div>
