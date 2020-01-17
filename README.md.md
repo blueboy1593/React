@@ -35,3 +35,10 @@ Velaport 님도 칭찬하심.
 - can be asynchronous
 - setState로 바꿀 수 있다
 
+
+
+## Redux devtools 설치
+
+크롬 확장 프로그램에서 redux devtools를 설치하고 아래의 github 사이트에서 사용 방법을 익힌다.
+
+https://github.com/zalmoxisus/redux-devtools-extension#installation
