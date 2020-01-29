@@ -14,3 +14,10 @@ npm run build
 npm run deploy
 ```
 
+
+
+Hash Router vs Browser Router
+
+둘 중 아무거나 써도 괜춘
+
+근데 hash router로 해야 github에 업로드 하기가 쉬움.!
